@@ -1,0 +1,18 @@
+@mixin style-text($color, $fsize, $fweight, $mb: 0) {
+  color: $color;
+  font-size: $fsize;
+  font-weight: $fweight;
+  margin-bottom: $mb;
+}
+
+@mixin position-card($hposition) {
+  display: flex;
+  justify-content: $hposition;
+  align-items: center;
+}
+
+@mixin responsive {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
